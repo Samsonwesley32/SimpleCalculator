@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:gravity="center"
+        android:hint="@string/hint_display"
+        android:importantForAutofill="no"
+        android:inputType="none"
+        android:padding="77dp"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="1dp"
+        android:columnCount="4"
+        android:rowCount="6">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/buttonSqr"
+            style="@style/CalculatorButton"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="@string/sqr_root"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonPi"
+            style="@style/CalculatorButton"
+            android:layout_width="63dp"
+            android:layout_height="26dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="@string/pi"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonExponent"
+            style="@style/CalculatorButton"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="@string/exponent"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonFactorial"
+            style="@style/CalculatorButton"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:text="@string/factorial"
+            android:textColor="@color/textColor" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/buttonAllClear"
+            style="@style/CalculatorButton"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="@string/all_clear"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonParenthesis"
+            style="@style/CalculatorButton"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="@string/parenthesis"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonPercentage"
+            style="@style/CalculatorButton"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:text="@string/percentage"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonDivisionSlash"
+            style="@style/CalculatorButton"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:text="@string/division_slash"
+            android:textColor="@color/textColor" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/button7"
+            style="@style/CalculatorButton"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="@string/number7"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/CalculatorButton"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="@string/number8"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/CalculatorButton"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:text="@string/number9"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonMultiplicationX"
+            style="@style/CalculatorButton"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:text="@string/multiplication_x"
+            android:textColor="@color/textColor" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/button4"
+            style="@style/CalculatorButton"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="@string/number4"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/CalculatorButton"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="@string/number5"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/CalculatorButton"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:text="@string/number6"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonSubtractionMinus"
+            style="@style/CalculatorButton"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:text="@string/subtraction_minus"
+            android:textColor="@color/textColor" />
+
+        <!-- Row 5 -->
+        <Button
+            android:id="@+id/button1"
+            style="@style/CalculatorButton"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:text="@string/number1"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/CalculatorButton"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:text="@string/number2"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/CalculatorButton"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:text="@string/number3"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonAdditionPlus"
+            style="@style/CalculatorButton"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:text="@string/addition_plus"
+            android:textColor="@color/textColor" />
+
+        <!-- Row 6 -->
+        <Button
+            android:id="@+id/buttonZero"
+            style="@style/CalculatorButton"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:text="@string/number0_zero"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonPointDot"
+            style="@style/CalculatorButton"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:text="@string/point_dot"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonBackSpaceDelete"
+            style="@style/CalculatorButton"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:text="@string/backspace_delete"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/buttonEqual"
+            style="@style/CalculatorButton"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:text="@string/equal_to"
+            android:textColor="@color/textColor" />
+
+    </GridLayout>
+</RelativeLayout>
+
